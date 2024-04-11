@@ -103,7 +103,7 @@ def main(stdscr) :
 
         # Print the generation
         stdscr.addstr(int(board.shape[0]/2)-1, int(board.shape[1] + 20), f"Generation : {generation}")
-        stdscr.addstr(int(board.shape[0]/2)+1, int(board.shape[1] + 20), f"Survived   : {survived}")
+        stdscr.addstr(int(board.shape[0]/2)+1, int(board.shape[1] + 20), f"Survived   : {survived:<4}")
 
         # Show the screen
         stdscr.refresh()
